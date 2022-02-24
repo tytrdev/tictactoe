@@ -1,0 +1,7 @@
+{
+  "scripts": {
+  },
+  "devDependencies": {
+    "parcel": "^2.3.2"
+  }
+}
