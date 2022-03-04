@@ -59,6 +59,17 @@ html, body {
     cursor: pointer;
 }
 
+#undo-button {
+    position: absolute;
+    background-color: lightblue;
+    border: none;
+    top: 150px;
+    left: 10px;
+    font-size: 4em;
+    padding: 10px;
+    cursor: pointer;
+}
+
 #turns {
     position: absolute;
     font-size: 4em;

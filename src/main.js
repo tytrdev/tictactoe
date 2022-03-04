@@ -26,12 +26,22 @@ function resetGame() {
   renderGame(getCurrentState());
 }
 
+function undo() {
+  if (states.length < 2) return;
+  states.pop()
+  hideMessage();
+  renderGame(getCurrentState());
+}
+
 window.onload = () => {
   const cells = getCells();
   cells.forEach(cell => cell.addEventListener('click', turn));
 
   const resetButton = document.querySelector('#reset-button');
   resetButton.addEventListener('click', resetGame);
+
+  const undoButton = document.querySelector('#undo-button');
+  undoButton.addEventListener('click', undo);
 
   renderGame(getCurrentState());
 }
