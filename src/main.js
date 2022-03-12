@@ -15,7 +15,6 @@ function turn(e) {
 
   const winner = checkForWinner(getCurrentState());
   if (winner !== Winners.None) {
-    won = true;
     showMessage(winner);
   }
 }
